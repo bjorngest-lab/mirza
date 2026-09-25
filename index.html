@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirza — Sérsaumuð herraföt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Work Sans', system-ui, sans-serif; background: #EDE6D6; }
+  a { text-decoration: none; }
+  .serif { font-family: 'Bodoni Moda', Georgia, serif; }
+  .nav-links { display: flex; gap: 40px; align-items: center; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 48px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 72px; align-items: center; }
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .grid-4 { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 36px; }
+    .grid-3 { grid-template-columns: 1fr; }
+    .grid-3 > div { border-left: none !important; border-top: 1px solid rgba(237,230,214,0.18); padding-top: 28px !important; padding-left: 0 !important; }
+    .grid-3 > div:first-child { border-top: none; padding-top: 0 !important; }
+    .grid-2 { grid-template-columns: 1fr; gap: 40px; }
+    .hero-pad { padding: 140px 24px 80px !important; }
+    .sec-pad { padding: 72px 24px !important; }
+    h1.headline { font-size: 44px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width: 100%; min-height: 100vh; color: #1B1712;">
+
+  <!-- NAV -->
+  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(20,16,12,0.86); backdrop-filter: blur(10px);">
+    <a href="#top" class="serif" style="font-size: 42px; font-style: italic; color: #EDE6D6; letter-spacing: 0.01em;">Mirza</a>
+    <div class="nav-links">
+      <a href="#ferlid" style="color: #EDE6D6; font-size: 15px;">Ferlið</a>
+      <a href="#handverk" style="color: #EDE6D6; font-size: 15px;">Handverkið</a>
+      <a href="#framboud" style="color: #EDE6D6; font-size: 15px;">Það sem við bjóðum</a>
+      <a href="#um-okkur" style="color: #EDE6D6; font-size: 15px;">Um okkur</a>
+      <a href="#boka" style="background: #9c6b3e; color: #140F0B; font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 2px;">Bóka mátun</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="top" style="background: #1B1712; padding: 200px 64px 120px;" class="hero-pad">
+    <div class="grid-2" style="max-width: 1240px; margin: 0 auto;">
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        <h1 class="serif headline" style="margin: 0; font-size: 76px; line-height: 1.05; font-weight: 500; color: #EDE6D6;">
+          Handverk frá Lahore<br>
+          <span style="font-style: italic; font-weight: 400;">– mælt í Reykjavík</span>
+        </h1>
+        <p style="margin: 0; max-width: 46ch; font-size: 18px; line-height: 1.65; color: #C9BFA8;">
+          Sérsaumuð jakkaföt, jakkar og skyrtur. Mátuð í Reykjavík og saumuð í höndunum af klæðskerum í Lahore — flík sem er gerð fyrir þig, og engan annan.
+        </p>
+        <div style="display: flex; align-items: center; gap: 28px; margin-top: 8px;">
+          <a href="#boka" style="background: #9c6b3e; color: #140F0B; font-size: 16px; font-weight: 500; padding: 16px 34px; border-radius: 2px;">Bóka mátun</a>
+          <a href="#ferlid" style="color: #EDE6D6; font-size: 15px; border-bottom: 1px solid #EDE6D6; padding-bottom: 2px;">Skoða ferlið</a>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="position: relative; width: 100%; aspect-ratio: 4/5; overflow: hidden; border: 1px solid rgba(237,230,214,0.14);">
+          <img src="hero-flatlay.jpg" alt="Sérsaumuð MIRZA jakkaföt og verkfæri klæðskerans" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block;">
+        </div>
+        <p style="margin: 0; font-size: 13px; font-style: italic; color: #8A7F6B;">Verkfærin á bak við hverja flík.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FERLIÐ -->
+  <section id="ferlid" style="background: #EDE6D6; padding: 120px 64px;" class="sec-pad">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 64px;">
+        <h2 class="serif" style="margin: 0; font-size: 42px; font-weight: 500;">Ferlið</h2>
+        <p style="margin: 0; font-size: 16px; color: #5B5140;">Frá fyrstu mátun til fullbúinnar flíkur.</p>
+      </div>
+      <div class="grid-4">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span class="serif" style="font-size: 40px; font-style: italic; color: #9c6b3e;">01</span>
+          <div style="font-size: 17px; font-weight: 500;">Bóka tíma</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5B5140;">Þú bókar mátun hjá okkur í Reykjavík, hvenær sem þér hentar.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span class="serif" style="font-size: 40px; font-style: italic; color: #9c6b3e;">02</span>
+          <div style="font-size: 17px; font-weight: 500;">Mátun og mæling</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5B5140;">Við mælum þig nákvæmlega — jakka, buxur, vesti eða skyrtu.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span class="serif" style="font-size: 40px; font-style: italic; color: #9c6b3e;">03</span>
+          <div style="font-size: 17px; font-weight: 500;">Saumað í Lahore</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5B5140;">Klæðskerar í Lahore sauma flíkina þína í höndunum, eftir þínum málum.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span class="serif" style="font-size: 40px; font-style: italic; color: #9c6b3e;">04</span>
+          <div style="font-size: 17px; font-weight: 500;">Afhending</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #5B5140;">Þú sækir fullkomlega mátaða flík hjá okkur í Reykjavík.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HANDVERKIÐ -->
+  <section id="handverk" style="background: #1B1712; padding: 120px 64px;" class="sec-pad">
+    <div class="grid-2" style="max-width: 1240px; margin: 0 auto;">
+      <div style="width: 100%; aspect-ratio: 4/5; overflow: hidden;">
+        <img src="scissors-hand.webp" alt="Klæðskeri sníður efni með handverkfærum" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <h2 class="serif" style="margin: 0; font-size: 42px; font-weight: 500; color: #EDE6D6;">Handverkið</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #A79C87; max-width: 42ch;">
+          Hvert stykki er skorið og saumað í höndunum, ekki í verksmiðju — með áhöldum sem hafa fylgt sömu klæðskerum árum saman, og saum sem tölva getur ekki endurskapað.
+        </p>
+        <div style="display: flex; align-items: center; gap: 16px; margin-top: 8px;">
+          <div style="width: 96px; height: 124px; flex-shrink: 0; overflow: hidden; border: 1px solid rgba(237,230,214,0.18);">
+            <img src="label-lining.jpg" alt="MIRZA merkið saumað í fóðrið" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <p style="margin: 0; font-size: 14px; font-style: italic; color: #8A7F6B;">Hvert stykki merkt í höndunum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAMBOÐ -->
+  <section id="framboud" style="background: #1B1712; padding: 120px 64px;" class="sec-pad">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 56px; flex-wrap: wrap;">
+        <h2 class="serif" style="margin: 0; font-size: 42px; font-weight: 500; color: #EDE6D6;">Það sem við bjóðum</h2>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="width: 64px; height: 64px; flex-shrink: 0; overflow: hidden; border: 1px solid rgba(237,230,214,0.18);">
+            <img src="houndstooth.jpg" alt="Efnisdæmi — pjéssamunstur" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <span style="font-size: 13px; color: #8A7F6B;">Efnisdæmi</span>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div style="padding: 0 40px 0 0;">
+          <div class="serif" style="font-size: 26px; font-style: italic; color: #EDE6D6; margin-bottom: 14px;">Jakkaföt</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A79C87;">Heilt sett, sérsniðið að þínu lagi og smekk — frá fyrsta hnappi til síðasta spors.</p>
+        </div>
+        <div style="padding: 0 40px; border-left: 1px solid rgba(237,230,214,0.18);">
+          <div class="serif" style="font-size: 26px; font-style: italic; color: #EDE6D6; margin-bottom: 14px;">Stakir jakkar</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A79C87;">Fyrir þá sem vilja blanda og passa, án þess að slaka á handverkinu.</p>
+        </div>
+        <div style="padding: 0 0 0 40px; border-left: 1px solid rgba(237,230,214,0.18);">
+          <div class="serif" style="font-size: 26px; font-style: italic; color: #EDE6D6; margin-bottom: 14px;">Skyrtur</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A79C87;">Sniðnar að hálsmáli, örmum og lit — að þínu eigin vali.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UM OKKUR -->
+  <section id="um-okkur" style="background: #EDE6D6; padding: 120px 64px;" class="sec-pad">
+    <div style="max-width: 780px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; gap: 24px; align-items: center;">
+      <h2 class="serif" style="margin: 0; font-size: 42px; font-weight: 500;">Um okkur</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #3D3629;">
+        Mirza er stofnað af Björn og Muhamed — tveimur mönnum sem alltaf hafa haft dálæti á klassískum herrafatnaði. Við trúum á handverk sem eldist vel, og á flík sem er saumuð fyrir einn mann í einu.
+      </p>
+    </div>
+  </section>
+
+  <!-- BÓKA MÁTUN -->
+  <section id="boka" style="background: #9c6b3e; padding: 140px 64px;" class="sec-pad">
+    <div style="max-width: 780px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; gap: 28px; align-items: center;">
+      <h2 class="serif" style="margin: 0; font-size: 48px; font-weight: 500; color: #140F0B;">Tilbúinn í fyrstu mátunina?</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2E2015; max-width: 44ch;">
+        Bókaðu tíma og við tökum málin — í höndunum, ekki með forriti.
+      </p>
+      <a href="mailto:[TÖLVUPÓSTUR]" style="background: #140F0B; color: #EDE6D6; font-size: 16px; font-weight: 500; padding: 18px 40px; border-radius: 2px; margin-top: 8px;">Bóka mátun</a>
+      <p style="margin: 0; font-size: 14px; color: #2E2015;">Eða sendu okkur línu á <span style="text-decoration: underline;">[TÖLVUPÓSTUR]</span></p>
+    </div>
+  </section>
+
+  <!-- FÓTUR -->
+  <footer style="background: #140F0B; padding: 72px 64px 40px;" class="sec-pad">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; border-bottom: 1px solid rgba(237,230,214,0.14); padding-bottom: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 10px; max-width: 320px;">
+        <div class="serif" style="font-size: 28px; font-style: italic; color: #EDE6D6;">Mirza</div>
+        <p style="margin: 0; font-size: 14px; color: #8A7F6B;">Handverk frá Lahore – mælt í Reykjavík</p>
+      </div>
+      <div style="display: flex; gap: 40px;">
+        <a href="#ferlid" style="color: #A79C87; font-size: 14px;">Ferlið</a>
+        <a href="#framboud" style="color: #A79C87; font-size: 14px;">Það sem við bjóðum</a>
+        <a href="#um-okkur" style="color: #A79C87; font-size: 14px;">Um okkur</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #8A7F6B;">
+        <span>[TÖLVUPÓSTUR]</span>
+        <span>[SÍMANÚMER]</span>
+        <span>[INSTAGRAM]</span>
+      </div>
+    </div>
+    <p style="margin: 24px 0 0; text-align: center; font-size: 13px; color: #6B6153;">© 2026 Mirza. Öll réttindi áskilin.</p>
+  </footer>
+
+</div>
+</body>
+</html>
